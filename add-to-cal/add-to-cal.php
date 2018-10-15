@@ -46,7 +46,72 @@ function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
     $output .= '</ul>';
     $output .= '<script>';
     $output .= '
-        console.log("' . esc_attr($attributes['title']) . '")
+    
+            document.addEventListener("DOMContentLoaded", function(){
+                var eventData = {
+                    title: "' . esc_attr($attributes["title"]) . '", // Event title
+                    start: new Date("'. esc_attr($attributes["date"]) . 'T' . esc_attr($attributes["time"]) .'"), // Event start date
+                    duration: ' . esc_attr($attributes["duration"]) . ', // Event duration (IN MINUTES)
+                    address: "' . esc_attr($attributes["address"]) . '",
+                    description: "' . esc_attr($attributes["description"]) . '"
+                };
+
+                var GoogleResult = addToCalendarUrls.google(eventData);
+                var YahooResult = addToCalendarUrls.yahoo(eventData);
+                var AppleOutlookResult = addToCalendarUrls.ics(eventData);
+
+                var addToGoogle = document.getElementById("addToGoogle");
+                    addToGoogle.setAttribute("href", GoogleResult);
+                    addToGoogle.addEventListener("click", function(){
+                        if (typeof(gtag) === "function") {
+                            gtag("event", "click", {
+                              "event_category": "addToCalendar",
+                              "event_label": "addToGoogle"
+                            });
+                        }
+                    });
+                var addToYahoo = document.getElementById("addToYahoo");
+                    addToYahoo.setAttribute("href", YahooResult);
+                    addToYahoo.addEventListener("click", function(){
+                        if (typeof(gtag) === "function") {
+                            gtag("event", "click", {
+                              "event_category": "addToCalendar",
+                              "event_label": "addToYahoo"
+                            });
+                        }
+                    });
+                var addToApple = document.getElementById("addToApple");
+                    addToApple.setAttribute("href", AppleOutlookResult);
+                    addToApple.addEventListener("click", function(){
+                        if (typeof(gtag) === "function") {
+                            gtag("event", "click", {
+                              "event_category": "addToCalendar",
+                              "event_label": "addToApple"
+                            });
+                        }
+                    });
+                var addToAndroid = document.getElementById("addToAndroid");
+                    addToGoogle.setAttribute("href", GoogleResult);
+                    addToGoogle.addEventListener("click", function(){
+                        if (typeof(gtag) === "function") {
+                            gtag("event", "click", {
+                              "event_category": "addToCalendar",
+                              "event_label": "addToAndroid"
+                            });
+                        }
+                    });
+                var addToOutlook = document.getElementById("addToOutlook");
+                    addToOutlook.setAttribute("href", AppleOutlookResult);
+                    addToOutlook.addEventListener("click", function(){
+                        if (typeof(gtag) === "function") {
+                            gtag("event", "click", {
+                              "event_category": "addToCalendar",
+                              "event_label": "addToOutlook"
+                            });
+                        }
+                    });
+            });
+
     ';
     $output .= '</script>';
 
