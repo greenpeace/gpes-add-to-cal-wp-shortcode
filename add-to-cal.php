@@ -20,6 +20,8 @@ Author URI: https://osvaldo.pt
  */
 function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
 
+    wp_enqueue_script('add_to_cal', plugin_dir_url(__FILE__) . 'add-to-cal.js', array(), '0.1');
+
     $atts = array_change_key_case((array)$atts, CASE_LOWER);
 
     $attributes = shortcode_atts([
