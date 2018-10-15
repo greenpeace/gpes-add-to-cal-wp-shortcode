@@ -32,9 +32,22 @@ function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
         'duration' => '60',
 
     ], $atts, $tag);
+    
 
     $output = '';
-    $output .= $attributes['title'];
+    $output = '<div id="addToCalendar"><strong>Add to calendar:</strong></div>';
+    $output .= '<ul id="addToCal">';
+    $output .= '<li><a target="_blank" id="addToGoogle">Google Calendar</a></li>';
+    $output .= '<li><a target="_blank" id="addToYahoo">Yahoo Calendar</a></li>';
+    $output .= '<li><a target="_blank" id="addToApple">Apple Calendar</a></li>';
+    $output .= '<li><a target="_blank" id="addToAndroid">Android Calendar</a></li>';
+    $output .= '<li><a target="_blank" id="addToOutlook">Outlook Calendar</a></li>';
+    $output .= '</ul>';
+    $output .= '<script>';
+    $output .= '
+        console.log("' . esc_attr($attributes['title']) . '")
+    ';
+    $output .= '</script>';
 
     return $output;
 
