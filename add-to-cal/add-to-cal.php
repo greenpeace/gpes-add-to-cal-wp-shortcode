@@ -14,7 +14,7 @@ Author URI: https://osvaldo.pt
 
 /**
  * Shortcode to add links that add an event to the user's calendar
- * [add_to_cal date='' time='' duration='' title='' description='']
+ * [add_to_cal date='' time='' duration='' title='' description='' address='']
  * @param  array $params  Shortcode attributes
  * @return string Templated data
  */
@@ -30,6 +30,7 @@ function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
         'date' => '2018-12-25',
         'time' => '12:01:00',
         'duration' => '60',
+        'address' => 'Please add the address to the event'
 
     ], $atts, $tag);
     
