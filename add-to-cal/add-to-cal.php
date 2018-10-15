@@ -8,6 +8,7 @@ Plugin Name: Add event to calendar
 Plugin URI: https://github.com/greenpeace/gpes-add-to-cal-wp-shortcode/
 Description: Shortcode to create links that add an event to the calendar. For example: <code>[add_to_cal date='2018-12-25' time='12:01:00' duration='60' title='Please add a title to the event' description='Please add a description to the event' address='Please add an address to the event']</code>
 Author: Osvaldo Gago
+Text Domain: add-to-cal
 Version: 0.1
 Author URI: https://osvaldo.pt
 */
@@ -38,13 +39,13 @@ function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
     
 
     $output = '';
-    $output .= '<div id="addToCalendar"><strong>Add to calendar:</strong></div>';
+    $output .= '<div id="addToCalendar"><strong>' . __('Add to calendar:', 'add-to-cal') .'</strong></div>';
     $output .= '<ul id="addToCal">';
-    $output .= '<li><a target="_blank" id="addToGoogle">Google Calendar</a></li>';
-    $output .= '<li><a target="_blank" id="addToYahoo">Yahoo Calendar</a></li>';
-    $output .= '<li><a target="_blank" id="addToApple">Apple Calendar</a></li>';
-    $output .= '<li><a target="_blank" id="addToAndroid">Android Calendar</a></li>';
-    $output .= '<li><a target="_blank" id="addToOutlook">Outlook Calendar</a></li>';
+    $output .= '<li><a target="_blank" id="addToGoogle">' . __('Google Calendar', 'add-to-cal') .'</a></li>';
+    $output .= '<li><a target="_blank" id="addToYahoo">' . __('Yahoo Calendar', 'add-to-cal') . '</a></li>';
+    $output .= '<li><a target="_blank" id="addToApple">' . __('Apple Calendar', 'add-to-cal') . '</a></li>';
+    $output .= '<li><a target="_blank" id="addToAndroid">' . __('Android Calendar', 'add-to-cal') . '</a></li>';
+    $output .= '<li><a target="_blank" id="addToOutlook">' . __('Outlook Calendar', 'add-to-cal') . '</a></li>';
     $output .= '</ul>';
     $output .= '<script>';
     $output .= '
