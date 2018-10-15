@@ -1,0 +1,6 @@
+/**
+!/.gitignore
+!/README.md
+!add-to-cal.php
+!LICENSE
+.DS_Store
