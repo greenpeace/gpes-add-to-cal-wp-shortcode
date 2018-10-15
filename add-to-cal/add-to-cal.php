@@ -6,7 +6,7 @@
 /*
 Plugin Name: Add event to calendar
 Plugin URI: https://github.com/greenpeace/gpes-add-to-cal-wp-shortcode/
-Description: Shortcode to import an html file uploaded in the media library. For example: [add_to_cal date='2018-12-25' time='12:01:00' duration='60' title='Please add a title to the event' description='Please add a description to the event' address='Please add an address to the event']
+Description: Shortcode to create links that add an event to the calendar. For example: <code>[add_to_cal date='2018-12-25' time='12:01:00' duration='60' title='Please add a title to the event' description='Please add a description to the event' address='Please add an address to the event']</code>
 Author: Osvaldo Gago
 Version: 0.1
 Author URI: https://osvaldo.pt
