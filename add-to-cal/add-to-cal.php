@@ -6,7 +6,7 @@
 /*
 Plugin Name: Add event to calendar
 Plugin URI: https://github.com/greenpeace/gpes-add-to-cal-wp-shortcode/
-Description: Shortcode to import an html file uploaded in the media library. For example: [add_to_cal date='' time='' duration='' title='' description='']
+Description: Shortcode to import an html file uploaded in the media library. For example: [add_to_cal date='2018-12-25' time='12:01:00' duration='60' title='Please add a title to the event' description='Please add a description to the event' address='Please add an address to the event']
 Author: Osvaldo Gago
 Version: 0.1
 Author URI: https://osvaldo.pt
@@ -14,8 +14,10 @@ Author URI: https://osvaldo.pt
 
 /**
  * Shortcode to add links that add an event to the user's calendar
- * [add_to_cal date='' time='' duration='' title='' description='' address='']
- * @param  array $params  Shortcode attributes
+ * [add_to_cal date='2018-12-25' time='12:01:00' duration='60' title='Please add a title to the event' description='Please add a description to the event' address='Please add an address to the event']
+ * @param  array $atts  Shortcode attributes
+ * @param  array $content  Shortcode content
+ * @param  array $tag  Shortcode tag
  * @return string Templated data
  */
 function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
@@ -36,7 +38,7 @@ function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
     
 
     $output = '';
-    $output = '<div id="addToCalendar"><strong>Add to calendar:</strong></div>';
+    $output .= '<div id="addToCalendar"><strong>Add to calendar:</strong></div>';
     $output .= '<ul id="addToCal">';
     $output .= '<li><a target="_blank" id="addToGoogle">Google Calendar</a></li>';
     $output .= '<li><a target="_blank" id="addToYahoo">Yahoo Calendar</a></li>';
