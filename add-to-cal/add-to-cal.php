@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Add_to_cal
- * @version 0.1
+ * @version 1.0
  */
 /*
 Plugin Name: Add event to calendar
@@ -10,7 +10,7 @@ Description: Shortcode to create links that add an event to the calendar. For ex
 Author: Osvaldo Gago
 Text Domain: add-to-cal
 Domain Path: /languages
-Version: 0.1
+Version: 1.0
 Author URI: https://osvaldo.pt
 */
 
