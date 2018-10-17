@@ -1,0 +1,62 @@
+# Copyright (C) 2018 Add event to calendar
+# This file is distributed under the same license as the Add event to calendar package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Add event to calendar 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/add-to-cal\n"
+"POT-Creation-Date: 2018-10-17 21:38:05+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: add-to-cal.php:44
+msgid "Add to calendar:"
+msgstr ""
+
+#: add-to-cal.php:46
+msgid "Google Calendar"
+msgstr ""
+
+#: add-to-cal.php:47
+msgid "Yahoo Calendar"
+msgstr ""
+
+#: add-to-cal.php:48
+msgid "Apple Calendar"
+msgstr ""
+
+#: add-to-cal.php:49
+msgid "Android Calendar"
+msgstr ""
+
+#: add-to-cal.php:50
+msgid "Outlook Calendar"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Add event to calendar"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/greenpeace/gpes-add-to-cal-wp-shortcode/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Shortcode to create links that add an event to the calendar. For example: "
+"<code>[add_to_cal date='2018-12-25' time='12:01:00' duration='60' "
+"title='Please add a title to the event' description='Please add a "
+"description to the event' address='Please add an address to the event']</"
+"code>"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Osvaldo Gago"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://osvaldo.pt"
+msgstr ""

@@ -9,13 +9,17 @@ Plugin URI: https://github.com/greenpeace/gpes-add-to-cal-wp-shortcode/
 Description: Shortcode to create links that add an event to the calendar. For example: <code>[add_to_cal date='2018-12-25' time='12:01:00' duration='60' title='Please add a title to the event' description='Please add a description to the event' address='Please add an address to the event']</code>
 Author: Osvaldo Gago
 Text Domain: add-to-cal
+Domain Path: /languages
 Version: 0.1
 Author URI: https://osvaldo.pt
 */
 
 defined( 'ABSPATH' ) or die( 'You can\'t do that !' );
 
-load_plugin_textdomain('add-to-cal', false, basename( dirname( __FILE__ ) ) . '/languages' );
+function my_plugin_load_plugin_textdomain() {
+    load_plugin_textdomain( 'add-to-cal', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'plugins_loaded', 'my_plugin_load_plugin_textdomain' );
 
 /**
  * Shortcode to add links that add an event to the user's calendar

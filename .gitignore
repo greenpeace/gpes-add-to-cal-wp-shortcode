@@ -1,7 +1,11 @@
-/**
+/*
 !/.gitignore
 !/README.md
-!add-to-cal.php
-!add-to-cal.js
 !LICENSE
 .DS_Store
+!add-to-cal/
+!add-to-cal/*
+!add-to-cal/languages/
+!add-to-cal/languages/*
+add-to-cal/.DS_Store
+add-to-cal/languages/.DS_Store
