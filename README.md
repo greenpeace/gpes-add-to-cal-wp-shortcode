@@ -12,4 +12,12 @@ Copy-paste the code bellow to your posts and pages.
 
 ## How to install
 
-Upload the **add-to-cal** folder to **wp-content/plugins/**
+1. Upload the **add-to-cal** folder to **wp-content/plugins/**.
+2. Activate the **Add event to calendar** plugin.
+
+## How to translate (new language)
+
+1. Open the languages/add-to-call.pot file with Poedit.
+2. Create new language.
+3. Translate.
+4. Save the .po and .mo files as the examples inside the languages folder.
