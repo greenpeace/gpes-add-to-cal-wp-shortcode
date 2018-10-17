@@ -16,10 +16,13 @@ Author URI: https://osvaldo.pt
 
 defined( 'ABSPATH' ) or die( 'You can\'t do that !' );
 
-function my_plugin_load_plugin_textdomain() {
+/**
+ * Initiate plugin's translations
+ */
+function add_to_call_load_plugin_textdomain() {
     load_plugin_textdomain( 'add-to-cal', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
-add_action( 'plugins_loaded', 'my_plugin_load_plugin_textdomain' );
+add_action( 'plugins_loaded', 'add_to_call_load_plugin_textdomain' );
 
 /**
  * Shortcode to add links that add an event to the user's calendar
