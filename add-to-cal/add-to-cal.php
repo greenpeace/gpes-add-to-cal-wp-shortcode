@@ -13,6 +13,8 @@ Version: 0.1
 Author URI: https://osvaldo.pt
 */
 
+defined( 'ABSPATH' ) or die( 'You can\'t do that !' );
+
 /**
  * Shortcode to add links that add an event to the user's calendar
  * [add_to_cal date='2018-12-25' time='12:01:00' duration='60' title='Please add a title to the event' description='Please add a description to the event' address='Please add an address to the event']
