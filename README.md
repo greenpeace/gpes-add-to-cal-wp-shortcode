@@ -14,7 +14,7 @@ Copy-paste the code bellow to your posts and pages.
 
 This shortcode uses Google Analytics events to track clicks in the add to calendar links. At the moment it supports the [gtag tracking code](https://developers.google.com/analytics/devguides/collection/gtagjs/events).
 
-## How to installhttps://developers.google.com/analytics/devguides/collection/gtagjs/events
+## How to install
 
 1. Upload the **add-to-cal** folder to **wp-content/plugins/**.
 2. Activate the **Add event to calendar** plugin.
