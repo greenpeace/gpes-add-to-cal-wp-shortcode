@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Add_to_cal
- * @version 1.0
+ * @version 1.1.1
  */
 /*
 Plugin Name: Add event to calendar
@@ -10,7 +10,7 @@ Description: Shortcode to create links that add an event to the calendar. For ex
 Author: Osvaldo Gago
 Text Domain: add-to-cal
 Domain Path: /languages
-Version: 1.0
+Version: 1.1.1
 Author URI: https://osvaldo.pt
 */
 
@@ -34,7 +34,7 @@ add_action( 'plugins_loaded', 'add_to_call_load_plugin_textdomain' );
  */
 function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
 
-    wp_enqueue_script('add_to_cal', plugin_dir_url(__FILE__) . 'add-to-cal.js', array(), '0.1');
+    wp_enqueue_script('add_to_cal', plugin_dir_url(__FILE__) . 'add-to-cal.js', array(), '1.1.1');
 
     $atts = array_change_key_case((array)$atts, CASE_LOWER);
 
