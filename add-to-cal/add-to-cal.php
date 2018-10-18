@@ -77,52 +77,27 @@ function shortcode_add_to_cal($atts = [], $content = null, $tag = '') {
                 var addToGoogle = document.getElementById("addToGoogle");
                     addToGoogle.setAttribute("href", GoogleResult);
                     addToGoogle.addEventListener("click", function(){
-                        if (typeof(gtag) === "function") {
-                            gtag("event", "click", {
-                              "event_category": "addToCalendar",
-                              "event_label": "addToGoogle"
-                            });
-                        }
+                        createAnalyticsEvent("addToCalendar", "click", "addToGoogle");
                     });
                 var addToYahoo = document.getElementById("addToYahoo");
                     addToYahoo.setAttribute("href", YahooResult);
                     addToYahoo.addEventListener("click", function(){
-                        if (typeof(gtag) === "function") {
-                            gtag("event", "click", {
-                              "event_category": "addToCalendar",
-                              "event_label": "addToYahoo"
-                            });
-                        }
+                        createAnalyticsEvent("addToCalendar", "click", "addToYahoo");
                     });
                 var addToApple = document.getElementById("addToApple");
                     addToApple.setAttribute("href", AppleOutlookResult);
                     addToApple.addEventListener("click", function(){
-                        if (typeof(gtag) === "function") {
-                            gtag("event", "click", {
-                              "event_category": "addToCalendar",
-                              "event_label": "addToApple"
-                            });
-                        }
+                        createAnalyticsEvent("addToCalendar", "click", "addToApple");
                     });
                 var addToAndroid = document.getElementById("addToAndroid");
-                    addToGoogle.setAttribute("href", GoogleResult);
-                    addToGoogle.addEventListener("click", function(){
-                        if (typeof(gtag) === "function") {
-                            gtag("event", "click", {
-                              "event_category": "addToCalendar",
-                              "event_label": "addToAndroid"
-                            });
-                        }
+                    addToAndroid.setAttribute("href", GoogleResult);
+                    addToAndroid.addEventListener("click", function(){
+                        createAnalyticsEvent("addToCalendar", "click", "addToAndroid");
                     });
                 var addToOutlook = document.getElementById("addToOutlook");
                     addToOutlook.setAttribute("href", AppleOutlookResult);
                     addToOutlook.addEventListener("click", function(){
-                        if (typeof(gtag) === "function") {
-                            gtag("event", "click", {
-                              "event_category": "addToCalendar",
-                              "event_label": "addToOutlook"
-                            });
-                        }
+                        createAnalyticsEvent("addToCalendar", "click", "addToOutlook");
                     });
             });
 
