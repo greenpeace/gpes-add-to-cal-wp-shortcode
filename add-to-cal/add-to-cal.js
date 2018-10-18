@@ -1,4 +1,5 @@
 /* jshint browser:true */
+/* globals gtag, ga */
 var MS_IN_MINUTES = 60 * 1000;
 var formatTimeToCal = function (date) {
     return date.toISOString().replace(/-|:|\.\d+/g, '');
@@ -83,5 +84,22 @@ var addToCalendarUrls = {
           'END:VCALENDAR'].join('\n'));
 
         return href;
+    }
+};
+
+/**
+ * Trigger Google Analytics event
+ * @param {string} category Category of the event
+ * @param {string} action   Action of the event
+ * @param {string} label    Label of the event
+ */
+var createAnalyticsEvent = function(category, action, label) {
+    if (typeof(gtag) === "function") {
+        gtag("event", action, {
+            "event_category": category,
+            "event_label": label
+        });
+    } else if (typeof(ga) === "function" ) {
+       ga("send", "event", category, action, label);
     }
 };
