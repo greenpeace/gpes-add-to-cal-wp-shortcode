@@ -12,7 +12,7 @@ Copy-paste the code bellow to your posts and pages.
 
 ## Analytics
 
-This shortcode uses Google Analytics events to track clicks in the add to calendar links. At the moment it supports the [gtag tracking code](https://developers.google.com/analytics/devguides/collection/gtagjs/events).
+This shortcode uses Google Analytics events to track clicks in the add to calendar links. It supports both the [gtag tracking code](https://developers.google.com/analytics/devguides/collection/gtagjs/events) and [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/events).
 
 ## How to install
 
