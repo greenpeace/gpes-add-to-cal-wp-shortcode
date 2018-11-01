@@ -14,8 +14,8 @@ var addToCalendarUrls = {
         var startTime = formatTimeToCal(event.start);
         var endTime = calculateEndTimeToCal(event);
 
-        startTime = startTime.substr(0, 15);
-        endTime = endTime.substr(0, 15);
+        // startTime = startTime.substr(0, 15);
+        // endTime = endTime.substr(0, 15);
 
         var href = encodeURI([
         'https://www.google.com/calendar/render',
@@ -49,6 +49,9 @@ var addToCalendarUrls = {
         // Remove timezone from event time
         var st = formatTimeToCal(new Date(event.start - (event.start.getTimezoneOffset() *
             MS_IN_MINUTES))) || '';
+        
+        // Adjustment date. There's timezone issues...
+        st = st.substr(0, 15);
 
         var href = encodeURI([
         'http://calendar.yahoo.com/?v=60&view=d&type=20',
@@ -66,8 +69,8 @@ var addToCalendarUrls = {
         var startTime = formatTimeToCal(event.start);
         var endTime = calculateEndTimeToCal(event);
 
-        startTime = startTime.substr(0, 15);
-        endTime = endTime.substr(0, 15);
+        // startTime = startTime.substr(0, 15);
+        // endTime = endTime.substr(0, 15);
 
         var href = encodeURI(
             'data:text/calendar;charset=utf8,' + [
