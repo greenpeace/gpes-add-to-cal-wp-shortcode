@@ -9,3 +9,9 @@
 !add-to-cal/languages/*
 add-to-cal/.DS_Store
 add-to-cal/languages/.DS_Store
+!add-to-cal-ui/
+!add-to-cal-ui/*
+!add-to-cal-ui/languages/
+!add-to-cal-ui/languages/*
+add-to-cal-ui/.DS_Store
+add-to-cal-ui/languages/.DS_Store

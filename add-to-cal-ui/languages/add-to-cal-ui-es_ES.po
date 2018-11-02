@@ -1,0 +1,89 @@
+# Copyright (C) 2018 Add to call UI
+# This file is distributed under the same license as the Add to call UI package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Add to call UI 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/add-to-cal-"
+"ui\n"
+"POT-Creation-Date: 2018-11-02 09:20:16+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-11-02 10:30+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+
+#: add-to-cal-ui.php:36
+msgid ""
+"Shortcode UI plugin must be active for Shortcode UI Add to Cal plugin to "
+"function."
+msgstr ""
+"El plugin Shortcode UI tiene que estar activo para que el plugin Add to "
+"Cal UI pueda funcionar."
+
+#: add-to-cal-ui.php:51
+msgid "Event title"
+msgstr "Titulo del evento"
+
+#: add-to-cal-ui.php:62
+msgid "Description"
+msgstr "Descripción"
+
+#: add-to-cal-ui.php:73
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#: add-to-cal-ui.php:74
+msgid "In this format <strong>2018-12-25</strong>"
+msgstr "En este formato <strong>2018-12-25</strong>"
+
+#: add-to-cal-ui.php:84
+msgid "Start time"
+msgstr "Hora de inicio"
+
+#: add-to-cal-ui.php:85
+msgid "Please respect the format <strong>16:01:00</strong>"
+msgstr "Por favor respeta el formato <strong>16:01:00</strong>"
+
+#: add-to-cal-ui.php:95
+msgid "Duration"
+msgstr ""
+
+#: add-to-cal-ui.php:96
+msgid "In minutes"
+msgstr "En minutos"
+
+#: add-to-cal-ui.php:106
+msgid "Address"
+msgstr "Dirección"
+
+#: add-to-cal-ui.php:119
+msgid "Add to cal"
+msgstr "Añadir al calendario"
+
+#. Plugin Name of the plugin/theme
+msgid "Add to call UI"
+msgstr "Interfaz gráfico para añadir al formulario"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/greenpeace/gpes-add-to-cal-wp-shortcode"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds an GUI to use the [add_to_cal] shortcode. This plugin requires the "
+"plugin Shortcake (Shortcode UI)"
+msgstr ""
+"Añade un GUI al shortcode  [add_to_cal]. Este plugin necesita el plugin "
+"Shortcake (Shortcode UI)"
+
+#. Author of the plugin/theme
+msgid "Osvaldo Gago"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://osvaldo.pt"
+msgstr ""
