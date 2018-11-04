@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Add to call UI
  * Plugin URI: https://github.com/greenpeace/gpes-add-to-cal-wp-shortcode
- * Version: 0.1
+ * Version: 2.0
  * Description: Adds an GUI to use the [add_to_cal] shortcode. This plugin requires the plugin Shortcake (Shortcode UI)
  * Author: Osvaldo Gago
  * Author URI: https://osvaldo.pt

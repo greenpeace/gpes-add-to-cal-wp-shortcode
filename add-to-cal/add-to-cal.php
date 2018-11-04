@@ -10,7 +10,7 @@ Description: Shortcode to create links that add an event to the calendar. For ex
 Author: Osvaldo Gago
 Text Domain: add-to-cal
 Domain Path: /languages
-Version: 1.1.1
+Version: 2.0
 Author URI: https://osvaldo.pt
 */
 
